@@ -88,6 +88,7 @@ build:
       dependencies:
         before:
           - sudo apt-get install libzmq3-dev -y
+          - sudo  apt-get install php7.3-dev -y
           - sudo pecl install zmq-1.1.3
         after:
           - composer require --dev squizlabs/php_codesniffer
